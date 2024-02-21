@@ -136,17 +136,21 @@ a:hover {
   text-align: center;
   margin-top: 100px;
   font-family: Playfair Display;
+  text-decoration: underline;
 }
 
 .tech1 {
+
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .card {
+    width: 450px;
+  
     height: 700px;
-    margin:   20px; 
+    margin:   5px; 
     padding:   20px;
     background-color: #f9f9f9;
     border-radius:   5px;
@@ -172,7 +176,7 @@ a:hover {
 }
 
 .card img {
-    width:   500px; 
+    width:   350px; 
     height:   300px; 
     object-fit: cover;
     margin-bottom:   20px;
@@ -201,8 +205,10 @@ a:hover {
 
 .contact{
     text-align: center;
-    margin-top: 100px;
+    /* margin-top: 50px; */
     margin-bottom: 50px;
+    font-family: Playfair Display;
+    text-transform: uppercase;
 }
 
 #contact{
@@ -283,7 +289,7 @@ a:hover {
   padding: 1rem 0;
 }
 .title h2{
-  font-family: var(--Playfair);
+  font-family: Playfair Display;
   font-size: 2.4rem;
 }
 .title p{
@@ -299,6 +305,13 @@ a:hover {
   opacity: 0.8;
 }
 
+.text{
+  margin-top: 10px;
+  /* margin-bottom: 100px; */
+  padding: 80px;
+  text-align: justify;
+  box-shadow:0   0   10px rgba(0,   0,   0,   0.1); ;
+}
 
 footer{
   background: darkblue;
@@ -334,20 +347,21 @@ footer{
 .footer span{
   margin-top: 1rem;
   display: block;
-  font-family: var(--Playfair);
+  font-family:Playfair Display;
   letter-spacing: 2px;
 }
 
 
-@media screen and (max-width:  650px) {
-  /* Your CSS styles for mobile devices go here */
+@media only screen and (max-width:768px) {
   header {
     height: 100vh;
+    width: 419px;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("./img/head.jpg");
   }
   #logo{
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -357,8 +371,10 @@ footer{
     flex-direction: column;
     align-items: center;
   }
-  .name1{
-    margin-left:80px;
+  #intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .tech1{
@@ -378,13 +394,42 @@ footer{
     width: 300px;
     height: 200px;
   }
-  .about-img{
-    width: 500px;
+  .about-img img{
+    width: 300px;
+    margin: 0 auto;;
     
+  }
+  
+  .sum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .about-text{
-    width: 300px;
+
+  .about-text p{
+    width:400px;
+    margin:0;
+    text-align: justify;
     
   }
+  .social-links a:hover{
+    background: #fff;
+    color: blue;
+  }
+
+  
+#Contact .btn1:hover {
+  background-color: #0056b3;
+}
+.text{
+  width: 350px;
+  object-fit: cover;
+}
+.text p{
+  width: 350px;
+  object-fit: cover;
+  padding-right:100px;
+}
+  
 }
